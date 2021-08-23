@@ -1,0 +1,124 @@
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 14rem;
+  padding: 5px;
+  margin: 12px 0px;
+  background-color: #131225;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+.media:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 100;
+}
+
+.ContentModal__landscape {
+  object-fit: contain;
+  border-radius: 7px;
+  padding-left: 4px;
+}
+
+.ContentModal__portrait {
+  display: none;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.ContentModal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  padding: 5px 0px;
+}
+
+.ContentModal::-webkit-scrollbar {
+  display: none;
+}
+
+.ContentModal__about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 200;
+}
+
+.ContentModal__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContentModal__description {
+  display: flex;
+  height: 35%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 10px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+}
+
+.ContentModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+.button__display {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.link__style {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 835px) {
+  .ContentModal__landscape {
+    display: none;
+  }
+  .ContentModal__portrait {
+    display: flex;
+    width: 38%;
+  }
+  .ContentModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0px;
+  }
+  .ContentModal__about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .ContentModal__title {
+    font-size: 2.4vw;
+  }
+  .ContentModal__description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 655px) {
+  .media {
+    width: 45%;
+  }
+}

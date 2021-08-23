@@ -1,0 +1,7 @@
+.bottomNavigation {
+  width: 100%;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  z-index: 100;
+}

@@ -1,0 +1,24 @@
+.title {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  padding: 10px 0px;
+}
+.subTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 2px;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+@media (max-width: 655px) {
+  .poster {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+}

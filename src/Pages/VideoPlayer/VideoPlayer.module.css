@@ -1,0 +1,41 @@
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-availability {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  border: 2px solid #e0e0e0;
+  width: 80%;
+  height: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile {
+  display: none;
+  margin-top: -10%;
+  color: #e0e0e0;
+}
+@media (max-width: 1030px) {
+  .mobile {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+  }
+  .player-wrapper {
+    margin-top: 7%;
+    padding-top: 50.25%;
+  }
+  .video-availability {
+    left: 9%;
+    font-size: 1rem;
+  }
+}
