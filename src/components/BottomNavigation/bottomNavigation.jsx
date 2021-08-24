@@ -17,10 +17,17 @@ const SimpleBottomNavigation = () => {
   const location = useLocation();
 
   const pathName = location.pathname;
-  const [value, setValue] = useState(pathName);
+  const [value, setValue] = useState(() => {
+    const getValue = sessionStorage.getItem("COMPONENT_VALUE");
+    if (getValue) {
+      return getValue;
+    } else {
+      return pathName;
+    }
+  });
 
   useEffect(() => {
-    //sessionStorage.setItem("COMPONENT_VALUE", JSON.stringify(value));
+    sessionStorage.setItem("COMPONENT_VALUE", JSON.stringify(value));
     if (histroy.action === "POP") {
       setValue(pathName);
     }
