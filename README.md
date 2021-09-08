@@ -1,3 +1,12 @@
+# Live Demo
+https://blueoneentertainment.netlify.app/
+
+Clone it into your local machine and run:
+# npm install
+
+When the node_modules is been installed then run:
+# npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
